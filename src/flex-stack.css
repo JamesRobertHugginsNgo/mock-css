@@ -52,23 +52,13 @@
 
   &.flex-stack-tabs {
     border-bottom: 2px solid var(--flex-stack-tabs--border-color);
+    color: var(--flex-stack-tabs--color);
     margin-bottom: 1rem;
     margin-top: 1rem;
 
     &.flex-stack-tabs--list {
       list-style: none;
       padding-left: 0;
-    }
-
-    & .flex-stack-tab {
-      border-bottom: 2px solid transparent;
-      color: var(--flex-stack-tabs--color);
-      text-align: center;
-
-      &.flex-stack-tab--active {
-        border-bottom-color: var(--flex-stack-tabs--border-color);
-        font-weight: bold;
-      }
     }
   }
 }

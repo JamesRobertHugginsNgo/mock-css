@@ -2,22 +2,22 @@
   margin-bottom: 1rem;
   margin-top: 1rem;
 
-  &>.panel-header,
-  &>.panel-body {
+  &>.panel__header,
+  &>.panel__body {
     border-color: lightgray;
     border-style: solid;
     border-width: 1px 1px 0 1px;
     padding-left: 1rem;
     padding-right: 1rem;
 
-    &.panel-header {
+    &.panel__header {
       background-color: #efefef;
       color: black;
       padding-bottom: 0.5rem;
       padding-top: 0.5rem;
     }
 
-    &.panel-body {
+    &.panel__body {
       padding-bottom: 0.5rem;
       padding-top: 0.5rem;
     }
