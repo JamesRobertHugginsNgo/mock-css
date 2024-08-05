@@ -10,7 +10,6 @@
   <style>
     :root {
       --flex-stack-tabs--border-color: #694F8E;
-      --flex-stack-tabs--color: #694F8E;
     }
 
     body {
@@ -28,12 +27,16 @@
       margin-top: 1rem;
     }
 
-    main {
-      h1 {
-        font-size: 2rem;
-        font-weight: normal;
-        line-height: normal;
-      }
+    h1 {
+      font-size: 2rem;
+      font-weight: normal;
+      line-height: normal;
+    }
+
+    h2 {
+      font-size: 1rem;
+      line-height: normal;
+      margin: 0;
     }
 
     .banner {
@@ -61,6 +64,8 @@
     }
 
     .flex-stack-tabs {
+      color: #694F8E;
+
       & a {
         color: inherit;
         display: block;
@@ -71,12 +76,6 @@
 
     .page-width {
       max-width: 480px;
-    }
-
-    .panel__header h2 {
-      font-size: 1rem;
-      line-height: normal;
-      margin: 0;
     }
   </style>
 </head>
@@ -108,7 +107,7 @@
     </div>
 
     <div class="page-width">
-      <ul class="flex-stack-tabs flex-stack-tabs--list">
+      <ul class="flex-stack-tabs flex-stack--list">
         <li>
           <a href="#" class="tab tab--active">Find</a>
         </li>
@@ -118,6 +117,12 @@
         <li>
           <a href="#" class="tab">User</a>
         </li>
+      </ul>
+
+      <div class="flex-stack-pills flex-stack--list">
+        <div class="pill pill--active">Pill 1</div>
+        <div class="pill">Pill 1</div>
+        <div class="pill">Pill 1</div>
       </div>
     </div>
   </header>
@@ -130,8 +135,9 @@
         <div class="panel__header">
           <h2>
             <div class="flex-stack-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
               </svg>
               <span>Profile</span>
             </div>

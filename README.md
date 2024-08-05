@@ -32,6 +32,7 @@ Class | Description
 flex-stack--center | Adds align-items with `center`. Helpful for icons beside text.
 flex-stack--compact | Overrides gulp with `0.5rem`. Allows for closer columns.
 flex-stack--equal | Adds flex with `1` to child elements. Helpful for evenly distributed layout.
+flex-stack--list | For applying the style to a list element.
 flex-stack--space | Adds justify-content with `space-between`. Helpful for creating left and right columns, used for header and footer layout.
 flex-stack--vertical | Adds flex-direction with `column`. Helpful for vertical layouts.
 flex-stack--very-compact | Overrides gulp with `0.25rem`. Allows for much closer columns.
@@ -48,26 +49,23 @@ Icon with text layout. Same as having `class="flex-stack flex-stack--center flex
 
 Header-footer layout. Same as having `class="flex-stack flex-stack--space"`.
 
+## flex-stack-pills
+
+Pills layout. Tabs layout. Same as having `class="flex-stack flex-stack--center flex-stack--middle"` with an additional border-bottom.
+
 ## flex-stack-row
 
 Form row layout. Same as having `class="flex-stack flex-stack--equal"` with an additional margin-bottom and margin-top of `1rem`. Allows for multi-column forms.
 
 ## flex-stack-tabs
 
-Tab layout. Same as having `class="flex-stack flex-stack--equal"` with an additional border-bottom.
+Tabs layout. Same as having `class="flex-stack flex-stack--equal"` with an additional border-bottom.
 
 ### Variables
 
 Variable | Description
 -- | --
 --flex-stack-tabs--border-color | Border color.
---flex-stack-tabs--color | Text color.
-
-### Modifiers
-
-Class | Description
--- | --
-flex-stack-tabs--list | For applying style on list elements (\<ol> or \<ul>).
 
 ## help-text
 
@@ -91,6 +89,19 @@ Class | Description
 -- | --
 panel__body | Body.
 panel__header | Optional header.
+
+## pill
+
+Represents the individual pill. Should be used inside flex-stack-pills.
+
+### Variables
+
+Variable | Description
+-- | --
+--pill--background-color | Background color.
+--pill--background-color--active | Background color when active.
+--pill--color | Text color.
+--pill--color--active | Text color when active.
 
 ## tab
 
