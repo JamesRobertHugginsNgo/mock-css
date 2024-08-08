@@ -1,29 +1,16 @@
-:root {
-  --button--background-color: #efefef;
-  --button--background-color--hover: white;
-  --button--color: black;
-  --button--color--hover: black;
-}
-
 .button {
-  background-color: var(--button--background-color);
+  background-color: #efefef;
   border: 1px solid darkgray;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   box-sizing: border-box;
-  color: var(--button--color);
+  color: black;
   cursor: pointer;
   font-size: 0.825rem;
   line-height: normal;
-  margin: 0;
   padding: 0.5rem 1rem;
 
   &:hover {
-    background-color: var(--button--background-color--hover);
-    color: var(--button--color--hover);
-  }
-
-  &.button--link {
-    display: inline-block;
-    text-decoration: none;
+    background-color: white;
+    color: black;
   }
 }

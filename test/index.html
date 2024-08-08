@@ -5,172 +5,175 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
-  <link rel="stylesheet" href="../src/index.css">
-  <style>
-    :root {
-      --flex-stack-tabs--border-color: #694F8E;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-    }
-
-    header {
-      margin-bottom: 1rem;
-    }
-
-    main,
-    footer {
-      margin-bottom: 1rem;
-      margin-top: 1rem;
-    }
-
-    h1 {
-      font-size: 2rem;
-      font-weight: normal;
-      line-height: normal;
-    }
-
-    h2 {
-      font-size: 1rem;
-      line-height: normal;
-      margin: 0;
-    }
-
-    .banner {
-      background-color: #694F8E;
-      color: white;
-
-      & h1 {
-        font-size: 1.5rem;
-        font-weight: normal;
-
-        & svg {
-          height: 1.25rem;
-          width: 1.25rem;
-        }
-      }
-
-      & .button {
-        --button--background-color: #694F8E;
-        --button--background-color--hover: white;
-        --button--color: white;
-        --button--color--hover: black;
-
-        border-color: white;
-      }
-    }
-
-    .flex-stack-tabs {
-      color: #694F8E;
-
-      & a {
-        color: inherit;
-        display: block;
-        padding: 0.5rem 1rem;
-        text-decoration: none;
-      }
-    }
-
-    .page-width {
-      max-width: 480px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <div class="banner">
+    <div class="no-margin-collapse">
       <div class="page-width">
-        <div class="flex-stack-layout flex-stack--center">
-          <h1>
-            <div class="flex-stack-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cup-hot" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6zM13 12.5a2 2 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5M2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175" />
-                <path
-                  d="m4.4.8-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 3.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 6.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 9.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8" />
-              </svg>
-              <span>Brand Name</span>
+        <div class="header-layout">
+          <div>
+            <div class="vertical-margin">
+              <div class="iconic-text iconic-text--center" style="font-size: 1.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-boombox"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M2.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2 0a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m7.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m1.5.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-7-1a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zm5.5 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+                  <path
+                    d="M11.5 13a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5m0-1a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3M5 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+                  <path d="M7 10.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0m-1 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+                  <path
+                    d="M14 0a.5.5 0 0 1 .5.5V2h.5a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12.5V.5A.5.5 0 0 1 14 0M1 3v3h14V3zm14 4H1v7h14z" />
+                </svg>
+                <span>Brand Name</span>
+              </div>
             </div>
-          </h1>
+          </div>
 
           <div>
-            <div class="flex-stack flex-stack--center flex-stack--compact">
-              <a href="#" class="button button--link">Sign In / Sign Up</a>
+            <div class="vertical-margin">
+              <div class="horizontal-list horizontal-list--center">
+                <div><a href="#">Home</a></div>
+                <div><a href="#">About Us</a></div>
+                <div><a href="#">Services</a></div>
+                <div><a href="#">Products</a></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="page-width">
-      <ul class="flex-stack-tabs flex-stack--list">
-        <li>
-          <a href="#" class="tab tab--active">Find</a>
-        </li>
-        <li>
-          <a href="#" class="tab">Talk</a>
-        </li>
-        <li>
-          <a href="#" class="tab">User</a>
-        </li>
-      </ul>
-
-      <div class="flex-stack-pills flex-stack--list">
-        <div class="pill pill--active">Pill 1</div>
-        <div class="pill">Pill 1</div>
-        <div class="pill">Pill 1</div>
       </div>
     </div>
   </header>
 
   <main>
-    <div class="page-width">
-      <h1>Mock Page</h1>
+    <div class="no-margin-collapse">
+      <div class="page-width">
+        <h1 class="vertical-margin">MAIN</h1>
 
-      <div class="panel">
-        <div class="panel__header">
-          <h2>
-            <div class="flex-stack-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-person-fill" viewBox="0 0 16 16">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-              </svg>
-              <span>Profile</span>
-            </div>
-          </h2>
+        <div class="tab-set tab-set--block">
+          <div><a href="#" class="tab tab--active">First</a></div>
+          <div><a href="#" class="tab">Second</a></div>
+          <div><a href="#" class="tab">Third</a></div>
+          <div><a href="#" class="tab">Fourth</a></div>
         </div>
 
-        <div class="panel__body">
-          <div class="flex-stack-row">
-            <div>
-              <div class="flex-stack-field">
-                <label for="name" class="label">Name <span>(optional)</span></label>
-                <input name="name" type="text" class="text-box" id="name">
+        <div class="pill-set">
+          <div><a href="#" class="pill pill--active">Tab</a></div>
+          <div><a href="#" class="pill">Tab</a></div>
+          <div><a href="#" class="pill">Tab</a></div>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.</p>
+
+          <div class="card">
+            <div class="card__header">
+              <div class="vertical-margin vertical-margin--half">
+                TEXT
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="flex-row">
+                <div>
+                  <div class="field-group">
+                    <label for="text-1">Text 1 <span>(optional)</span></label>
+                    <input name="text-1" type="text" class="text-box" id="text-1">
+                    <div>Information</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="field-group">
+                    <label for="text-2">Text 2 <span>(optional)</span></label>
+                    <input name="text-2" disabled type="text" class="text-box" id="text-2">
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-row">
+                <div>
+                  <div class="field-group">
+                    <label for="text-3">Text 3 <span>(optional)</span></label>
+                    <input name="text-3" type="text" class="text-box" id="text-3">
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-row">
+                <div>
+                  <div class="field-group">
+                    <label for="date-1">Date 1 <span>(optional)</span></label>
+                    <input name="date-1" type="date" class="text-box" id="date-1">
+                  </div>
+                </div>
+
+                <div>
+                  <div class="field-group">
+                    <label for="time-1">Time 1 <span>(optional)</span></label>
+                    <input name="time-1" type="time" class="text-box" id="time-1">
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-row">
+                <div>
+                  <div class="field-group">
+                    <label for="textarea-1">Textarea 1 <span>(optional)</span></label>
+                    <textarea name="textarea-1" rows="5" class="text-box" id="textarea-1"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-row">
+                <div>
+                  <div class="field-group">
+                    <label for="select-1">Select 1 <span>(optional)</span></label>
+                    <select name="select-1" class="text-box text-box--select" id="select-1">
+                      <option value="">Select...</option>
+                      <option value="option1">Option 1</option>
+                      <option value="option2">Option 2</option>
+                      <option value="option3">Option 3</option>
+                    </select>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="flex-stack-row">
-            <div>
-              <div class="flex-stack-field">
-                <label for="dob" class="label">Date of Birth <span>(optional)</span></label>
-                <input name="dob" type="date" class="text-box" id="dob">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="flex-stack-row">
-        <div>
-          <div class="flex-stack flex-stack--compact">
-            <button class="button">Button</button>
-            <button class="button">Button</button>
-            <button class="button">Button</button>
+
+
+
+        <div class="vertical-margin">
+          <div class="horizontal-list horizontal-list--compact">
+            <div><button class="button">Button</button></div>
+            <div>
+              <button class="button">
+                <div class="iconic-text">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                  </svg>
+                  <span>Add</span>
+                </div>
+              </button>
+            </div>
+            <div>
+              <button class="button">
+                <div class="iconic-text">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+                  </svg>
+                  <span>Remove</span>
+                </div>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -179,9 +182,20 @@
 
   <footer>
     <div class="page-width">
-      <div class="flex-stack-layout">
-        <div>HEADER</div>
-        <div>HEADER</div>
+      <div class="footer-layout">
+        <div>
+          <div class="vertical-margin">
+            <div class="horizontal-list horizontal-list--center">
+              <div><a href="#">Home</a></div>
+              <div><a href="#">About Us</a></div>
+              <div><a href="#">Services</a></div>
+              <div><a href="#">Products</a></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="vertical-margin">Brand Name &copy; 2024</div>
+        </div>
       </div>
     </div>
   </footer>

@@ -1,15 +1,18 @@
 .text-box {
-  background-color: white;
   border: 1px solid lightgray;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   box-sizing: border-box;
-  color: black;
   display: block;
   font-size: 0.825rem;
   line-height: normal;
-  margin: 0;
   padding: 0.5rem 1rem;
   width: 100%;
+
+  &:disabled,
+  &[readonly] {
+    background-color: #efefef;
+    cursor: not-allowed;
+  }
 
   &.text-box--select {
     -moz-appearance: none;

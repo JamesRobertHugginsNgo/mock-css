@@ -1,0 +1,8 @@
+.header-layout {
+  @media (600px < width) {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,12 @@
+.horizontal-list {
+  display: flex;
+  gap: 1rem;
+
+  &.horizontal-list--center {
+    justify-content: center;
+  }
+
+  &.horizontal-list--compact {
+    gap: 0.25rem;
+  }
+}
