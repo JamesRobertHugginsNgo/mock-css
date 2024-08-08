@@ -1,0 +1,20 @@
+.pill-set {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+  & .pill {
+    border-radius: 1rem;
+    display: block;
+    padding: 0.5rem 1.5rem;
+
+    &.pill--active {
+      background-color: darkgray;
+      color: black;
+      font-weight: bold;
+    }
+  }
+}

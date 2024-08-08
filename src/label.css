@@ -1,9 +1,0 @@
-.label {
-  display: block;
-  font-weight: bold;
-
-  &>span {
-    color: gray;
-    font-weight: normal;
-  }
-}

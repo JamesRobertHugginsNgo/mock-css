@@ -1,0 +1,9 @@
+.iconic-text {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+
+  &.iconic-text--center {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,30 @@
+.tab-set {
+  align-items: end;
+  border-bottom: 2px solid darkgray;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+  &.tab-set--block {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    &>* {
+      flex: 1;
+    }
+  }
+
+  & .tab {
+    border-bottom: 2px solid transparent;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-align: center;
+
+    &.tab--active {
+      border-bottom-color: darkgray;
+      font-weight: bold;
+    }
+  }
+}

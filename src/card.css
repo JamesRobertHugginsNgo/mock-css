@@ -1,0 +1,36 @@
+.card {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+  & .card__body,
+  & .card__header {
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 1rem;
+    width: 100%;
+
+    &:first-child {
+      border-start-end-radius: 0.25rem;
+      border-start-start-radius: 0.25rem;
+    }
+
+    &:last-child {
+      border-bottom-width: 1px;
+      border-end-end-radius: 0.25rem;
+      border-end-start-radius: 0.25rem;
+    }
+
+    &.card__header {
+      background-color: #dddddd;
+      color: black;
+      font-weight: bold;
+    }
+
+    &.card__body {
+      padding-bottom: 0.25rem;
+    }
+  }
+}
